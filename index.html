@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesxo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+   
+  <title>Frontend Mentor | Tic Tac Toe</title>
+</head>
+<body>
+
+  <!-- New game menu start -->
+  <div class="container">
+    <div class="XO">
+      <img src="./assets/icon-xo.png" alt="XO Icon" width="150" height="150">
+    </div>
+    <div class="rectangle">
+        <p id="pick">PICK PLAYER 1'S MARK</p>
+        <!-- ernest making some edits here -->
+        <div class="toggle">
+          <div id="x-img-id" class="x-img">
+            <img id="x" src="./assets/icon-x-grey.png" alt="X">
+          </div>
+          <div id="o-img-id" class="o-img">
+            <img id="o" src="./assets/icon-o-grey.png" alt="O">
+          </div>
+        </div>
+        <p id="remember">REMEMBER: X GOES FIRST</p>
+    </div>
+    <div class="new">
+      <a href="./singleplayer.html"><button id="cpu">NEW GAME (VS CPU)</button></a>
+      <a href="./htmlhollow.html"><button id="player">NEW GAME (VS PLAYER)</button></a>
+
+      <!-- <p id="cpu"></p>
+      <p id="player"></p> -->
+    </div>
+  </div>
+
+  <script type="module" src="./index.js"></script>
+</body>
+</html>

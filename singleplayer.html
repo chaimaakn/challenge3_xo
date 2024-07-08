@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">    
+    <title>Tic Tac Toc</title>
+</head>
+<body>
+ 
+     <!-- Game board start -->
+<div class="body">
+    <div id="overlay"></div>
+    <section id="gameplay-id" class="gameplay">
+        <div class="header">
+            <div class="xo">
+                <img id="XO" src="./assets/icon-xo.png" alt="XO Icon" width="100" height="100">
+            </div>
+            <div class="turn"> 
+                <img id="turn-icon-img" src="./assets/icon-x-grey.png" alt="turn-icon">
+                <span id="turn">TURN</span> 
+            </div>
+            <div id="restart-icon" class="return">
+                <img src="./assets/icon-restart.png" alt="return">
+            </div>
+        </div>
+        <div id="gameplay-board" class="boxes">
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+        </div>
+        <div class="footer">
+            <div id="you-rg" class="you">
+                <span id="you">X (YOU)</span>
+                <span class="num" id="player-score">0</span>
+            </div>
+            <div class="ties">
+                <span id="ties">TIES</span>
+                <span class="num" id="ties-count">0</span>
+            </div>
+            <div id="cpu-rg" class="ocpu">
+                <span id="cpu">O (CPU)</span>
+                <span class="num" id="cpu-score">0</span>
+            </div>
+        </div>
+    </section>
+    <div id="states" class="states">
+        <p id="state-text">xxxx</p>
+        <div id="states-message" class="states-message">
+            <span id="win-icon"></span>
+            <span id="ttr">TAKES THIS ROUND</span>
+        </div>
+        <div class="states-buttons">
+            <a href="./index.html"><button id="quit">QUIT</button></a>
+            <button id="next-round">NEXT ROUND</button>
+        </div>
+    </div>
+    <div id="restart-states" class="states">
+        <div id="restart-states-message" class="states-message">
+            <span id="restart-ttr">TAKES THIS ROUND</span>
+        </div>
+        <div class="states-buttons">
+            <button id="cancel">NO, CANCEL</button>
+            <button id="restart">YES, RESTART</button>
+        </div>
+    </div>
+</div>
+     <!-- Game board Ends -->
+  <!-- x/o icon --> 
+
+   <!-- Your score -->
+   <!-- Ties score -->
+   <!-- CPU score -->
+
+  <!-- Oh no, you lost
+  You won!
+  Player  -->
+  <!-- 1/2 wins!
+
+  x/o icon takes the round
+  Round tied
+  Restart game?
+
+  Quit
+  Next round
+  No, cancel
+  Yes, restart -->
+
+  <!-- Game board end -->
+
+
+  <script src="./singleplayer.js"></script>
+
+</body>
+</html>
